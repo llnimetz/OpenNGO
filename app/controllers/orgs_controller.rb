@@ -9,19 +9,19 @@ respond_to :html, :xml, :json, :csv
   end
 
   def search
-    @defaults = {}
-    if params[:filter]
-      @defaults[:cause] = params[:filter][:cause]
-      @defaults[:location] = params[:filter][:location]
-      @defaults[:transparency] = params[:filter][:transparency]
+    @search = Org.search do 
+      fulltext params[:search_terms]
+      paginate :page => params[:page], :per_page=> 15
+      order_by :transparency, :desc
+      order_by :updated_at, :desc
+      facet(:transparency)
+      with(:transparency, params[:transparency]) if params[:transparency].present?
+      facet(:causes)
+      with(:causes, params[:causes]) if params[:causes].present?
     end
 
-    @filters = []
-    @filters << { :name => "transparency", :options => [0,1,2,3] }
-    @filters << { :name => "cause", :options => Cause.uniq.pluck(:description) }
-    @filters << { :name => "location", :options => Province.uniq.pluck(:name) }
-
-    @search_results = Search.results_for(params)
+  @search_results = @search.results
+    
     respond_with(@search_results) do |format|
       format.html { render }
       format.json { render }

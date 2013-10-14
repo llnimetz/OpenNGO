@@ -91,75 +91,7 @@ AGES = [
     "Educational Institution"
   ]
 
-LOGOS =[
 
-"https://lh3.googleusercontent.com/AFeqMuLcAUdQiNIeTiScMdgw0IJGGLrekjEK7taZ8a9vmN0tL6obWYzpa3Ttz_HgoA=s190",
-"https://lh5.googleusercontent.com/-O_ipOvk7SxYtcj90hcxkBVOoCfcz_a2MqwUvthU0itn6rbmXal2VsbhchDEa54cnA=s190",
-"https://lh6.googleusercontent.com/qX859uGu4EOlOn8byaVSCPY-TKLYzOFORqDRKKqi64oYgNxROiBoKGX8HLsh6nd5hA=s190",
-"https://lh3.googleusercontent.com/vwSX0oKjtAmAzn0SgirKzNUYxD38oTtJGd-I7OH_en3M3p4xd6L5CO9Fj7NhU3VqJA=s190",
-"https://lh5.googleusercontent.com/E6CivCifxBl0MHFo0jMy4KWub2hNj7cAiXyNMlP_S1yR22RnMX_TpCatULyoTgWGZw=s190",
-"https://lh6.googleusercontent.com/uGdGYACxvYtQ57w0AqL_GAnQtNQz17ihUgt0zCUc8oqGz_Zco5-rZJDXW_L3Iy71mQ=s190",
-"https://lh5.googleusercontent.com/G_Ib6s9PN0EOhGM22FT5vlY_qvoUQ5797R17G3nMsf5aQsl_4WTxIUgkgFYYTs8E7g=s190",
-"https://lh3.googleusercontent.com/OtAQQN5Jo6nclII9qD64AaFoKnqMDik2pGKg1DetpFJUzRMW_99U-5TRMWp1LbJWSg=s190",
-"https://lh6.googleusercontent.com/2TWNCIDMCYMiUJ8AAUfqPo-QWvKyYsc2tND_tajeRJOjXSXSNIRaOhCBOJIousw9mQ=s190",
-"https://lh6.googleusercontent.com/bJTY7I9AeIm9rei3IZOGL5yyXQsKALD8vN9yoJiHmB4vQgeB-OyNszwfijMyhmyr2g=s190",
-"https://lh3.googleusercontent.com/sue87KDXBdPmMsX2fHx85cjvmyRVfEpQpU34Wr-fWvwGxJ7tez3qqjyl9_A5G3TA9A=s190",
-"https://lh5.googleusercontent.com/nHlvpcKtbttLV2G5e4mjEEFZlc3FrU-pluG1O3Hp3_6EPzEUHjKNIFsWmVre2fAncA=s190",
-"https://lh4.googleusercontent.com/Jc9NpG016LtocYfUWYXXGJeqnltoVcNs47zlhOnypR1kAMOzBXsIui7ZdjBr0YqjZA=s190",
-"https://lh6.googleusercontent.com/2TWNCIDMCYMiUJ8AAUfqPo-QWvKyYsc2tND_tajeRJOjXSXSNIRaOhCBOJIousw9mQ=s190",
-"https://lh6.googleusercontent.com/bJTY7I9AeIm9rei3IZOGL5yyXQsKALD8vN9yoJiHmB4vQgeB-OyNszwfijMyhmyr2g=s190",
-"https://lh4.googleusercontent.com/aQxf-ZNPW_evGokzpTqzUJsrXUVq8n1U4__nZqtdWdQZqsO_WeBY8hrPZ0gE7fWSbQ=s190",
-"https://lh6.googleusercontent.com/692UC6eLt-Jva5xQVuuabk00vr4LuOmYctKK0fY5OFFRnaDvjTNw835Z8NwoRdUBRQ=s190",
-"https://lh4.googleusercontent.com/mjzvJDkcgqbQh0dOzU4rkkVWr8ger8z3Wk57AgpKTxvRhtXqDae888K0TWvxflAUAg=s190",
-"https://lh6.googleusercontent.com/tAqwWiWe_plhAQGIGbRTSGo-mlG67T55E95-kJPole6UxLBYfFQujuXpM3pSSeZ7sw=s190",
-"https://lh3.googleusercontent.com/sd8N3EpcWc1ordFYciojKBfLYwF3E4VIsg3pUIWQ1QTTktpvYqwwRP5I5ZceljvtWQ=s190",
-"https://lh5.googleusercontent.com/2rgQlU__9NbOmmGDAfI-2X49WjO6B8hY-kUJqw_wb6oUmUz49MweS9Pb3vIykxqNFQ=s190",
-"https://lh4.googleusercontent.com/Ia6953t6zCC9hIg5Aa9pqyO6afJDyG5MD50_ZIgvgjNcRA4sbd42AQnxnfcNvKwpqA=s190",
-"https://lh4.googleusercontent.com/WgMxgNQfahq6MNONahki53-NbQJP2ZcCwGCDg-ru6GJWArLcGqp9nnMpOxVDDAvVLw=s190",
-"https://lh5.googleusercontent.com/yF5Zfbgh443M98pP5bsZJBCk2ZL42LjGETDS9hZaH-4qixXhtWsYu7xdDnAEheJNaA=s190",
-"https://lh3.googleusercontent.com/rsC32DfkGJeTPpElUZqqVvV7MNt10u9qQUInqQDSLgJc2H04k2cQ6e-vL7DVMT1bkg=s190",
-"https://lh5.googleusercontent.com/R2YyEPMVQcUscPdQEQFzGW4fjR6wjdTMNk1sBHS22CxwtQYH2ic0ijo--t40tgF9vg=s190",
-"https://lh5.googleusercontent.com/QLTj7zxgAz1inMXc5hL5plXmiQtMtpcAQgv9unVaGxWo4_PjoCX7PkI1dZ3OT0KnrQ=s190",
-"https://lh4.googleusercontent.com/1HXhsR-Kqu33UCkMBxSjroz0PQ4XQ3ZcsWhCr-yy3v0oclU6E5dK6eiWOMyK8hYrNQ=s190",
-"https://lh3.googleusercontent.com/fQWtG2FXfoOaPMFmMw71i7e6Z9ER87I-fvUG0YjgTdzlgOyJy9V8vy5cMgcW4yEShA=s190",
-"https://lh4.googleusercontent.com/FtG9pajMapdjvthQj_mqETVrJk4pQCTdqrSa48jpP21-KeAa5cLYRcMm89gSytPWuQ=s190",
-"https://lh4.googleusercontent.com/lJ4xmi0B0NPjc-k9Y6eCIPl4_epzfVmc_G7E9JXNUVoxVK4A7QVg3DzAD6v2HZB1Pg=s190",
-"https://lh6.googleusercontent.com/Rsfn4qmPwQgCR5dstLXErN8eWYYG1TSq3n4mO3ls3QWx4B7uOHUnK0RzE8E3AFW9kw=s190",
-"https://lh4.googleusercontent.com/3m6KPyXFsWpkBlGNgZPBEwvEvvO4TTChvOixo5sfvm_O_EPVFLKmw9BXaPNIgoMNkA=s190",
-"https://lh6.googleusercontent.com/22OuzujQN_oqEo2gKe5RTrzmdPVOJVr0sMCfV981OIlxcHZral7LVe2xYfldYqUU9A=s190",
-"https://lh3.googleusercontent.com/IYataFzZQnZ7NA4xUFcGbrcNU7Xt1DfPdNHKmtoqG7jAQauCJk_Tbx6-d8Ut4rMXsQ=s190",
-"https://lh3.googleusercontent.com/DV72vaZCmzGXJwE8yinW0FKcr0_GmG6i3f_4Q0QsymGveX7MpEtVVEcPxMW2g1Y66A=s190",
-"https://lh3.googleusercontent.com/-Y7poY4YDq_g4LrhHNUpzLOaP0HWcWUT-ATcSiEEVFT_8C2WKCqd6Rk6JbLdDEbjFQ=s190",
-"https://lh4.googleusercontent.com/YyMca91Q5EMmqXU6FAGz0FimTyE4WwZA3CumPIR6yyXIHdSDYPXH_9Y3wwI5F_yCww=s190",
-"https://lh6.googleusercontent.com/Mh2xZMhoMQ7s6ibg_W2pUWQtN-6WjEz9tarz1s_XuwfgYKrJCKer5C0PwIILynGChQ=s190",
-"https://lh4.googleusercontent.com/Arvgy2GrJ0Dn95-tw7j-R7xIWCsl9chWtBe6tnYbiTwS_iiRUEU2_oMsZehCY6Bi2g=s190",
-"https://lh5.googleusercontent.com/NPosW9LJJv20XGtXMcYXyaMQj-fhltxahec4tU7LQqNwGa5vfgJS1F4OA3sUQekW9w=s190",
-"https://lh5.googleusercontent.com/6KrbY-AwY2vQqPjnCGtesb3jDWgh8PmQXBJhT0jN1YNIO6aGBWlesM6u2G11m7C0Rw=s190",
-"https://lh6.googleusercontent.com/ANNPjoPB-gvsm2H9PZrycyjPODeEK2nKu5of85Xhgm7vd6YkDVRn4vTBEexbntJGoQ=s190",
-"https://lh5.googleusercontent.com/XZweyQ2np_I_1yc4hk5nSTM0X1vTl6qjFUU8wJsdQ69NBkbpNKTyvwF089ixbRwIvg=s190",
-"https://lh6.googleusercontent.com/_38KxJzkAUzGiipZTkchdVgGSWSt_sg4OWo4RRZLh-aVhRSI3R4ux-d_E2E13PktHw=s190",
-"https://lh3.googleusercontent.com/I_0ACV3ExuV5RASS9_u6QoTfJyswPjTMioniuP_ofIrKAK0rAmNhCguPfuCGDdXg5Q=s190",
-"https://lh6.googleusercontent.com/omG8n1VVhyUOOOr5Dd_kH1USJb-PA_RElKIV9xqb-WnC-unrw-GfjCYghymOV_umIA=s190",
-"https://lh3.googleusercontent.com/oHP0vOmdhmoWoTFVng6iiLR3jUblRi0N0WbjRs6ixdZ_Kk8Le2pMV_vQ9YzqPyZc1A=s190",
-"https://lh3.googleusercontent.com/gVsBfLjmNjUh46tnojEU9vJ7zO3Z_y_FkdYF1fCR8gY4LJj96L0F77rvN0PuqczKjA=s190",
-"https://lh5.googleusercontent.com/xcOsaLK0gM7XFgj5P7nS0IE-MW_HrCtnrGa42bUQGYIT_YiGCFWgYCCRvkFF4vjbgg=s190",
-"https://lh4.googleusercontent.com/iY4vThgWLSsoORlOhP-42UrbB9ECpK3YWXLQNOFgNO5IwJVkWZWtirtXED2BhqLzgg=s190",
-"https://lh5.googleusercontent.com/93QlRmDKQ-Uqk66IqXxrqYoS5KTqJvQRjcCVHNcgBGF3McVnQKOk8Pn5WpxJ3FVWvw=s190",
-"https://lh6.googleusercontent.com/9dOJjazNu--uKv46leUGP0VRciJwmgdoT4uheLIRQoSVkYBgnkNRy2vDPLSngRYHLQ=s190",
-"https://lh6.googleusercontent.com/sHDsOw6VHVaozAPnHoAgkt0Wwx5Da-h0qmQScXN6Ht2MOciB05Kikf7skaSdxmBvHw=s190",
-"https://lh4.googleusercontent.com/T1O8EZHv6TdF731ssL9ruxNP1hT0Ro3bQdWi5Rpdbux6yFWcqUnZtaDzBo8EZFYUGg=s190",
-"https://lh3.googleusercontent.com/fU1mUn6fmqfLDEiUaadHvbu2Bt_DpMuvDk3BY07548oHO1_iMPulokvnSsSg1Fm8aw=s190",
-"https://lh4.googleusercontent.com/KOdpYDrUTEdTJXO8_GUF5Me9CCAUPzioZufKF-yAMJECllSZpEtlDfWIlu0U5L1b6A=s190",
-"https://lh3.googleusercontent.com/dyYhRzpfyuDSLQZzsCX-a__GSmZAEbWkxlgJeNXq6wTGJGs1BoU4UbPPL_V1Dq5slg=s190",
-"https://lh4.googleusercontent.com/IosmvBe0hfVrwrMVPaB_JPb44kpUqaVeh-2q6HE8F--0ALPpph2i0AEsNTwTJNzfyQ=s190",
-"https://lh4.googleusercontent.com/FkUN8OreHpbhzAaxJNKN3Qds77tyvJnUt9r-w4L42mpdtmfr0vLZeN_wZXmVjGzfVA=s190",
-"https://lh6.googleusercontent.com/gQQvZlmeVe3lxnhXBWh5hP4NSptGt6Qfb63B_hr5t3GI4ZgIrpRdlKtxRlUcC2RQFw=s190",
-"https://lh4.googleusercontent.com/HK0SCyvOtde39Jj56HbWXzKngTvUiPSclL7Xf6YsQY7CusiXdefpv_wNr20_yJ7DPQ=s190",
-"https://lh6.googleusercontent.com/qMU76sSVEnX6ljykuhkvzxI5QklIfeEqkN9r2yTTGffF2C9I71xduHMtMph-GbF7ww=s190",
-"https://lh3.googleusercontent.com/B2pcd3HgWYMJTNCAtcYpXP7QQts-xvF82ZL1gruT42o7-eShErQVpEXS58ehhD67FQ=s190",
-"https://lh6.googleusercontent.com/0lMs8EgAAYuV2VDFV2xVKUA9-ssTTDiOn4JTc9ojs8LKoFLNKg0m0dvpwZdORNWing=s190",
-"https://lh5.googleusercontent.com/yYkXp2UL-y_cAHEEQVDZaf8Ru-Rw2aVsID9PpxmTpI8mUyVlqFZI7sLlPPCKh5lWBw=s190"
-]
 
 LEVELS = [3,2,1,0]
 
@@ -199,7 +131,7 @@ LEVELS = [3,2,1,0]
   facebook: "www.facebook.com",
   linkedin: "www.linkedin.com",
   twitter:"CIPPEC",
-  logo_url: LOGOS.sample
+  logo_url: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9tf5cX2cqeC-Xd8o_S2uCadlMDyYx7THn76V0S36rVe9DagYf"
 
 )}
 

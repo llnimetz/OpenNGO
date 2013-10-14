@@ -154,48 +154,7 @@ fieldset #search-submit {
   }
 }
 
-.filter{
-  width: 100%;
-  height: 90px;
-  background-color: $awhite;
-  text-align: center;
-  padding-top: 15px;
-    div:last-child {
-      border: none;
-    }
-    div {
-    float:left;
-    border-right: 1px solid #eee;
-    padding-right: 25px;
-    padding-left: 25px;
 
-  }
-  div:first-child {
-    margin-left: 50px;
-  }
-  div p{
-    font-size: 12px;
-    font-weight: bold;
-  }
-  #customDropdown{
-    font-size: 11px;
-    padding: 10px;
-  }
-  a{
-    float: left;
-    margin-left: 25px;
-    margin-top: 20px;
-  }
-  .apply{
-    font-size: 15px;
-    margin-top: 15px;
-    margin-right: 25px;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-}
 
 .search-sum {
   padding: 11px 0 7px 21px;
@@ -203,42 +162,6 @@ fieldset #search-submit {
   border-bottom: 1px solid #cfcbcb;
 }
 
-.results-container {
-  position: relative;
-  height: 100%;
-  background-color: #E7E7E7;
-  margin-top: 0px;
-  .list-container {
-    width: 839px;
-    padding: 15px;
-    border: 1px solid #eee;
-    background-color: #fff;
-    color: $light-grey;
-    font-size: 15px;
-    .star{
-      color: #FFA500;
-    }
-    div {
-      min-height: 100%;
-    }
-    h4 a{
-      color: #4587ba;
-      text-decoration: none;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-    ul{
-      padding-top: 0px;
-    }
-    ul li{
-      list-style-type: none;
-    }
-  }
-}
 
-.org-logo {
-  max-width: 100%;
-  height: 152px;
-}
 
 

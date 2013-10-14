@@ -1,55 +1,69 @@
-<div class="filter">
-  <div class="row small-6 large-centered columns">
-  <%= form_tag :search_orgs, method: :get do %>
-    <% @filters.each do |filter| %>
-      <div class="transparency">
-        <p><%= filter[:name].upcase %></p>
-        <%= select("filter", filter[:name], filter[:options], {include_blank: 'None', :selected => @defaults[filter[:name].to_sym] || "None"}) %>
-      </div>
+<div class="resultspage_wrapper"> 
+  <div id="left-search">
+    
+    <div class="facets" id="facet_transparency">
+    <h5><%= will_paginate @search_results %></h5>
+    </div>
+
+    <div class="facets" id="facet_transparency">
+    <h3>Transparency</h3>
+    <ul>
+    <% @search.facet(:transparency).rows.each do |row| %>
+      <li>
+        <% if params[:transparency].blank? %>
+          <%= link_to " ★ "*row.value + " ☆ " * (3 - row.value), :transparency => row.value %> (<%= row.count %>)
+        <% else %>
+          <strong><%= row.value %></strong> (<%= link_to "remove", :transparency => nil %>)
+        <% end %>
+      </li>
     <% end %>
-    <%= submit_tag(t("Apply"), :class => "small button radius alert apply") %>
-  <% end %>
+  </ul>
+  </div>
+
+  <div class="facets" id="facet_causes">
+  <h3> Causes </h3>
+  <ul>
+    <% @search.facet(:causes).rows.each do |row| %>
+      <li>
+        <% if params[:causes].blank? %>
+          <%= link_to row.value, :causes => row.value %> (<%= row.count %>)
+        <% else %>
+          <strong><%= row.value %></strong> (<%= link_to "remove", :causes => nil %>)
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
   </div>
 </div>
 
 
-<div class="search-sum">
-  <div class="row">
-    <div class="large-3 push-9 columns">
-    </div>
-    <div class="large-9 pull-3 columns">
-      <h5 class="subheader"><%= @search_results.count %> organizations found</h5>
-    </div>
-  </div>
-
-</div>
-
-
-<div class="results-container">
-  <div class="row small-6 large-centered columns">
+<div id="right-search">
     <% @search_results.each do |result| %>
-    <div class="row list-container">
-        <div class="large-9 push-3 columns">
-            <h4><%= link_to "#{result.name}", controller: :orgs, action: :show, id: "#{result.id}" %>
+     <div class="results-container">
+        <% if result.transparency == 0 %>
+        <h5> <%= result.name %> </h5> 
+        <%else%>
+            <h5><%= link_to "#{result.name}", controller: :orgs, action: :show, id: "#{result.id}" %>
               <% result.transparency.times do %>
                 <i class='fi-star star'></i>
-              <% end %>
-            </h4>
-
-            <ul>
-              <li><%=t("Provinces")%>: <%= result.provinces.map {|p| p.name }.join(', ')%></li>
-              <li><%=t("Causes")%>: <%= result.causes.map { |c| c.description }.join(', ') %></li>
-              <li>2013 <%=t("Budget")%>: P$XXXXX</li>
-            </ul>
-        </div>
-        <div class="large-3 pull-9 columns"><img class"org-logo" src=<%= result.logo_url%>>
-
-        </div>
-    </div>
+        <% end %>
     <% end %>
+            </h5>
+            <table>
+              <td class="search-results-image-box"><%= image_tag(result.logo_url, :alt =>"") %> </td>
+              <td class="search-results-content-box">
+                <ul>
+                  <li><%=t("Provinces")%>: <%= result.provinces.map {|p| p.name }.join(', ')%></li>
+                  <li><%=t("Causes")%>: <%= result.causes.map { |c| c.description }.join(', ') %></li>
+                  <li>2013 <%=t("Budget")%>: P$XXXXX</li>
+                </ul>
+              </td >
+            </table>
+    
   </div>
+  <%end%>
 </div>
-
+</div>
 
 
 

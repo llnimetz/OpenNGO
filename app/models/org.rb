@@ -50,7 +50,14 @@ class Org < ActiveRecord::Base
 
   searchable :auto_index => true, :auto_remove => true do
     text :name, boost: 5
+    text :preferred_name, boost:4
+    text :mission
+    string :causes, :multiple=>true do
+      causes.map(&:description)
+    end
+    text :mission
     integer :transparency
+    date :updated_at
   end
 
   def people
@@ -80,6 +87,7 @@ class Org < ActiveRecord::Base
       csv << self.attributes.values
     end
   end
+
 
   private
   def schedule_solr_reindex

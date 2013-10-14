@@ -11,6 +11,7 @@ gem 'sidekiq'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'devise'
+gem 'will_paginate','~>3.0.5'
 
 
 group :production do
