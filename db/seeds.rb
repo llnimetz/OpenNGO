@@ -1,4 +1,4 @@
-require 'Faker'
+
 
 PROVINCES = [
   'Capital Federal',
@@ -96,20 +96,20 @@ AGES = [
 LEVELS = [3,2,1,0]
 
 50.times {Org.create(
-  name: Faker::Company.name,
-  initials: Faker::Address.city_prefix,
-  city: Faker::Address.city,
-  address: Faker::Address.street_address,
+  name: "Example Org #{rand(0..1000000)}",
+  initials: "EO",
+  city: "Buenos Aires",
+  address: "1242 Av Libertador, 5-D",
   telephone: "(123)456-7894",
-  email: Faker::Internet.email,
-  website: Faker::Internet.domain_name,
+  email: "example@email.com",
+  website: "www.example.com",
   transparency: LEVELS.sample,
   youtube: "http://www.youtube.com/embed/LHKLS6TECTA",
-  mission: Faker::Lorem.paragraph,
+  mission: "Do no Evil",
   fte: 23,
   pte: 12,
   volunteers: 42,
-  leader_name: "#{Faker::Name.name}",
+  leader_name: "Bartolomeo de las Casas",
   leader_title: "Executive Director",
   founding_date: Date.parse('31-10-1975'),
   starting_date: Date.parse('01-12-1978'),
@@ -153,8 +153,8 @@ Org.all.each do |seed_org|
   end
 
   seed_org.locations.first.update_attributes(primary: true)
-  seed_org.branches << Branch.create( description: Faker::Address.street_name)
-  seed_org.branches << Branch.create( description: Faker::Address.street_name)
+  seed_org.branches << Branch.create( description: "sdfsdfs")
+  seed_org.branches << Branch.create( description: "Fakeasdadsdet_name")
   seed_org.causes << Cause.find_by_description(CAUSES.sample)
   seed_org.causes << Cause.find_by_description(CAUSES.sample)
   seed_org.activities << Activity.find_by_description(ACTIVITIES.sample)
@@ -168,13 +168,13 @@ Org.all.each do |seed_org|
   seed_org.networks << Network.create(net_name: "AEDROS", net_scope: "National", net_status: "Member")
   seed_org.prizes << Prize.create(prize_name: "Mejor Think Tanks de Argentina", prize_date: '31-12-2010' , prize_giver: "Universidad de Pennsylvania")
   seed_org.prizes << Prize.create(prize_name: "Premio Juscelino Kubitchek", prize_date: '31-02-2010', prize_giver: "BID")
-  seed_org.board.people << Person.create(name: Faker::Name.name)
-  seed_org.board.people << Person.create(name: Faker::Name.name)
+  seed_org.board.people << Person.create(name: "Faker::Name.name")
+  seed_org.board.people << Person.create(name: "Faker::Name.name")
   seed_org.advisory = Advisory.create()
-  seed_org.advisory.people << Person.create(name: Faker::Name.name)
-  3.times{seed_org.objectives << Objective.create(summary:Faker::Lorem.paragraph)}
+  seed_org.advisory.people << Person.create(name: "Faker::Name.name")
+  3.times{seed_org.objectives << Objective.create(summary:"Faker::Lorem.paragraph")}
 
-  3.times{seed_org.programs << Program.create(pro_name: Faker::Name.name, pro_goal:Faker::Name.name, pro_description: Faker::Name.name, pro_target: "343", pro_location:"Buenos Aires", pro_budget: "US$100,000", pro_funding_sources:"government grant", pro_affiliations:"none", pro_metrics:"none", pro_results:"pending")}
+  3.times{seed_org.programs << Program.create(pro_name: "Faker::Name.name", pro_goal:"Faker::Name.name", pro_description: "Faker::Name.name", pro_target: "343", pro_location:"Buenos Aires", pro_budget: "US$100,000", pro_funding_sources:"government grant", pro_affiliations:"none", pro_metrics:"none", pro_results:"pending")}
 
 
 end
