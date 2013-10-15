@@ -5,14 +5,15 @@
      <% else %>
        <%= image_tag("http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/800px-Flag_of_Argentina.svg.png",:alt=>"", :class=> "org-logo-image") %>
      <% end %>
+     <div style="width: 290px; float:left">
+       <span id='my-resizer' style="display: inline-block; font-size: 50px;"> <%= @org.name %></span>
+     </div>
 
-       <span class='my-resizer' id='org-header-title'> <%=@org.name%><br> </span>
-
-        <p><span id="org-stars" >
+        <p><center><br><br><span id="org-stars" >
           <% @transparency = 2 %>
          <%=" ★ " * @transparency %>
          <%= " ☆ " * (3 - @transparency) %>
-       </span></p>
+       </span></center></p>
   </div>
 
 

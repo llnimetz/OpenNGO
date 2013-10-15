@@ -1,6 +1,16 @@
 
+// text resizer:
+$(function() {
+    var span = $('#my-resizer');
+    var fontSize = parseInt(span.css('font-size'));
+    console.log("starting")
 
-
+    do {
+      console.log(span.width())
+        fontSize--;
+        span.css('font-size', fontSize.toString() + 'px');
+    } while (span.width() >= 290);
+});
 
 
 
@@ -11,7 +21,6 @@ $(document).ready(function(){
 
   $('#org-homepage').show()
 
-
   $(".org-header-left").click(function() {
     $('#org-homepage').show()
     $('#org-programs').hide()
@@ -21,14 +30,12 @@ $(document).ready(function(){
   });
 
 
-
   $('#org-programs-butt').click(function() {
     $('#org-homepage').hide()
     $("#org-programs").show()
     $("#org-financials").hide()
     $("#org-team").hide()
     $("#org-affiliations").hide()
-
   });
 
   $("#org-financials-butt").click(function() {
@@ -54,29 +61,6 @@ $(document).ready(function(){
     $("#org-team").hide()
     $("#org-affiliations").show()
   });
-
-
-// text resizer:
-
-  $('.my-resizer').each(function ( i, span ) {
-
-    var width = $(span).width(),
-        html = '<span style="white-space:nowrap"></span>',
-        line = $(span).wrapInner(html).children()[ 0 ],
-        maxsize = 40; //biggest possible font size
-
-    $(span).css( 'font-size', maxsize );
-
-    while ( $(line).width() > width ) {
-        $(span).css( 'font-size', --maxsize );
-    }
-
-    $(span).text( $(line).text() );
-
-  });
-
-
-
 
 
 

@@ -4,7 +4,7 @@
 
 .new-org {
   background-color: #a8a8a8;
-  height: 8500px;
+  overflow:auto;
 }
 
 .inner-div {
