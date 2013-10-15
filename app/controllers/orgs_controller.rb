@@ -16,6 +16,8 @@ respond_to :html, :xml, :json, :csv
       order_by :updated_at, :desc
       facet(:transparency)
       with(:transparency, params[:transparency]) if params[:transparency].present?
+      facet(:locations)
+      with(:locations, params[:locations]) if params[:locations].present?
       facet(:causes)
       with(:causes, params[:causes]) if params[:causes].present?
     end

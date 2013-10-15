@@ -5,7 +5,7 @@
   .list-container {
     width: 100%;
     padding: 15px;
-    color: $light-grey;
+    color: #a8a8a8;
     font-size: 15px;
     
     color:#898989;
@@ -47,6 +47,7 @@ overflow:auto;
   padding-left:20px;
   border:2px solid #E0E0E0;
   border-radius:10px;
+  font-size:small;
 }
 
 

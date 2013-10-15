@@ -1,19 +1,35 @@
 <div class="resultspage_wrapper"> 
   <div id="left-search">
     
-    <div class="facets" id="facet_transparency">
+    <div class="facets">
     <h5><%= will_paginate @search_results %></h5>
     </div>
 
+
     <div class="facets" id="facet_transparency">
-    <h3>Transparency</h3>
+    <h4>Transparency</h4>
     <ul>
     <% @search.facet(:transparency).rows.each do |row| %>
       <li>
         <% if params[:transparency].blank? %>
           <%= link_to " ★ "*row.value + " ☆ " * (3 - row.value), :transparency => row.value %> (<%= row.count %>)
         <% else %>
-          <strong><%= row.value %></strong> (<%= link_to "remove", :transparency => nil %>)
+          <strong><%= " ★ "*row.value + " ☆ " * (3 - row.value) %></strong> (<%= link_to "remove", :transparency => nil %>)
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+  </div>
+
+  <div class="facets" id="facet_locations">
+  <h4> Location </h4>
+  <ul>
+    <% @search.facet(:locations).rows.each do |row| %>
+      <li>
+        <% if params[:locations].blank? %>
+          <%= link_to row.value, :locations => row.value  %> (<%= row.count %>)
+        <% else %>
+          <strong><%= row.value %></strong> (<%= link_to "remove", :locations => nil %>)
         <% end %>
       </li>
     <% end %>
@@ -21,7 +37,7 @@
   </div>
 
   <div class="facets" id="facet_causes">
-  <h3> Causes </h3>
+  <h4> Causes </h4>
   <ul>
     <% @search.facet(:causes).rows.each do |row| %>
       <li>
@@ -37,11 +53,13 @@
 </div>
 
 
+
+
 <div id="right-search">
     <% @search_results.each do |result| %>
      <div class="results-container">
         <% if result.transparency == 0 %>
-        <h5> <%= result.name %> </h5> 
+        <h5><font color="grey"> <%= result.name %> (profile pending approval)</font> </h5> 
         <%else%>
             <h5><%= link_to "#{result.name}", controller: :orgs, action: :show, id: "#{result.id}" %>
               <% result.transparency.times do %>
