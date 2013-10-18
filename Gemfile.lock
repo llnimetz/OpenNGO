@@ -81,6 +81,8 @@ GEM
       sass-rails (>= 3.1.1)
     fssm (0.2.10)
     high_voltage (1.2.4)
+    highcharts-js-rails (1.0.0)
+      railties (>= 3.1, < 4.1)
     highline (1.6.19)
     hike (1.2.3)
     i18n (0.6.1)
@@ -228,6 +230,7 @@ DEPENDENCIES
   faker
   foundation-icons-sass-rails
   high_voltage
+  highcharts-js-rails (~> 1.0.0)
   jquery-rails
   launchy
   modernizr-rails

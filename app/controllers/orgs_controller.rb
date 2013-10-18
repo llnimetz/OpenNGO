@@ -16,6 +16,8 @@ respond_to :html, :xml, :json, :csv
       order_by :updated_at, :desc
       facet(:transparency)
       with(:transparency, params[:transparency]) if params[:transparency].present?
+      facet(:locations)
+      with(:locations, params[:locations]) if params[:locations].present?
       facet(:causes)
       with(:causes, params[:causes]) if params[:causes].present?
     end
@@ -32,6 +34,13 @@ respond_to :html, :xml, :json, :csv
   def show
     @org = Org.find(params[:id])
     @primary_prov = @org.primary_province
+
+  @chart = Highcharts.new do |chart|
+    chart.chart(renderTo: 'piechart')
+    chart.title('Example Chart')
+    chart.series(name: 'Funding', type: 'pie', data: [['government',20],['Private',10],['Corporate',70]])
+    chart.credits(enabled: false)
+  end
 
 
     respond_with(@org) do |format|

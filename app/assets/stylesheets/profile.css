@@ -68,25 +68,21 @@
 }
 
 
-#org-header-title {
-  padding-left:20px;
-  font-size:xx-large;
-
-}
-
 #org-stars{
   margin-top:20px;
   padding-left:20px;
   color:#274873;
   font-size:x-large;
+  float:left;
 
 }
 
 .org-logo-image {
-  position: relative;
-  float: left;
-  height: 80%;
+  float:left;
+  max-width:180px;
+  max-height:120px;
 }
+
 
 
 .org-main-window-panel {
@@ -164,6 +160,7 @@ a { color:black;}
    background: black;
    padding:0px;
    padding-bottom:5px;
+   margin-bottom:10px;
 }
 
 .org-profile-icons {
@@ -233,5 +230,8 @@ img.desaturate{
   height:20px;
 }
 
-
+#piechart{
+  height:300px; 
+  margin-bottom:10px;
+}
 
